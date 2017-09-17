@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div#wrapper
+        include menu.jade
+        div#page-content-wrapper
+            h1 Media
+            div.content-header
+                h1#home
+                    a.btn.btn-info.px-2(href="/instagram/get/media") Sync
+        div.page-content.inset
+            div.row
+                if (!instagram)
+                    p There is no media. Please synch to get it
+                else
+                    table
+                        thead
+                            tr: th Posts
+                        tbody
+                            each instagram, i in userPosts
+                                    tr
+                                        td Test

@@ -1,0 +1,48 @@
+# customeInsta
+Customization of Instagram Self View
+
+##How to run
+
+git clone https://github.com/hitesh1986in/customeInsta.git
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+Node JS, Mongodb 3.4
+
+#Db Queries
+
+```
+mongo;
+use custominsta;
+db.createUser({user:"custominsta", pwd:"custominsta", roles:["dbAdmin"]});
+db.users.insert({"salt" : "3524e5d2f8c68cb6ebdf7235d98d09a47f0af3e231dd18723b36ca446e099309", "hash" : "4becd81e66275338f93d68c8a13db856915eacdd23f6ef38914a606ce705af34da24b2d2990d8c0b984734cc16f3585b23aa8abbd6cd798aa411043b6f36bf1c67673f1618065ca9edd0645de93e57ed3b15b81b352a70cae1037bd3a38cf755d9b951be93edd2cb54b77ac2de1bfa81d7f3fbb21632a6809085fbf52790d7de2b0f690b3e868551edc83875ef83447ab62e7e09c79dea934ea838838699b61d74567796ff3dbb30e793c6ca5888d628d874b749f86a048ee78beb6cd2aa9390b7a5b1646368fedb325027e28598776de1e2e92ef81a2c6f5a3c6a6dff53a899f34fbfc6946d908fb3577bf43f6bf0c465f4ff69f18d6c00183840e9bba7dcb7d9e38adfd22e717749681f7a7b6086e14b0f320d239a952e7548621ebbc5e1bebdc406f3c78de9267ba549f800ec9c2fb0974da276f110bcc4c31b0fcc10df3480f861e8a6c4129ae95e232325dac788aea492c583737b82ff47ca23ce6d732e8b34ba02b0047cab19ba1618f225f1d511e2b12e04baec4e24e4d42c4eb1a1cd23c61ccdee72918ed3582b38b01d37ca05efc2ebb6954ad3fc5628702d0413d2103abaa3c8143fcd94a285770b3ac1cbc79aa7a11d206f46a01eaa23c63668911de6e6ff489a3ec15bc9420c44dbaea909ab3e4a62e717a971fcde1b8ef8cead178b57133de45af0297e38318ff6be52cf021dad58c1c79161f15d501aeafcd1", "username" : "admin", "name" : "Hitesh Parikh"});
+db.users.insert({"salt" : "7e5be762ccaf91710942092dbc5d51730f91d036e7f540c85b5de716ca3f14f3", "hash" : "43faf90b7c8fe0e4021d395b8e47d18252143814bc803f4c671e6eb9e5124d739d864cb8d8fb599d2d7d0126aa0dc612fa3071040296d7d8df05d144070f8d1b358f4a5e62acb93e8de0776fd3be3b0aa751f34a639e74ffa2000c3a7634cbb94a04d6b0c7e91094c198993a4440f7538ae9cdab5d05c3f52664d4d54f73b552d7279a89d838c28660c71015a2e15c44dfa458df6b28baad1fedb07346a834c03ef5a2484a5956bf98509a47e9262adc5177d9aeca73794b76a3562d900d3cd7c3e782a7e71a6d86de28126112514f3bdf2829967381a7a298dee2df7efb73bc3b39a92bb33c44ffb7e6284dab9e4ea08892cdcd66ac3bcc9d71a1959ce42bc46bd0b9fb25d57c7f4ee303cdf1c1bf2e4b1d020a159013262d22cbf21b32a8d563ff858727fabd054481294a2bb9056f5de2cf721dd5025fd90cd2ca7de07a02eb246bc3f377d865c24cc5e9cc864ca245e58de48026fb4f86eec79ed304aba4a276ea5c580f5a4e3a2ac8f907137f12c39d80cf62a5dfc08ed113d22891b4644e7bbec6bd1dc1ff33e245775c27c2806ab27ff232a8a4e1e37e7d11d6b8879f6d5df225becb31ce15cb5f15e4daa2a39f6ab2a6d39ac65fc6822a10a2acdc592cf1ed5f18a7834f77bd830389e13553ce96a91fb8ef8f2395b7f4f38c89cc8b307163035339e36e737bcfbe77e5feeca8afa1ad4328ec4bdad0ebae9fcf233b", "username" : "admin1", "name" : "Admin1"});
+```
+
+### Installing
+
+Dependant package installation
+```
+npm install
+```
+
+
+## Running the server
+
+Below commnage will run node server
+
+```
+npm start
+```
+
+Browse at:
+
+```
+http://localhost:8888
+```
