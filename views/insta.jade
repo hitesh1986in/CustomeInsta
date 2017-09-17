@@ -7,10 +7,7 @@ block content
             h1 Instagram
         div.content-header
             h1#home
-            if (!instagram)
                 a.btn.btn-default.px-2(href="/instagram/auth") Authorise
-            else
-                a.btn.btn-default.px-2(href="#") Logout Instagram
                 a.btn.btn-info.px-2(href="/instagram/get/media") Sync
         div.page-content.inset
             div.row
@@ -23,5 +20,3 @@ block content
                         div.col-md-3
                             h2 #{instagram.user.full_name}
                             p @#{instagram.user.username}
-
-
